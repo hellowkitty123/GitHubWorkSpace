@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5.0dip"
+    android:paddingTop="5.0dip" >
+
+    <RelativeLayout
+        android:id="@id/relImage"
+        android:layout_width="82.0dip"
+        android:layout_height="82.0dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5.0dip" >
+
+        <ImageView
+            android:id="@id/goodsIconIv"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginTop="1.0dip" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_80" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/relContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginRight="10.0dip" >
+
+        <TextView
+            android:id="@id/textClothesName"
+            style="@style/style_16_666666_BOLD"
+            android:layout_width="180.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:maxLines="2" />
+
+        <TextView
+            android:id="@id/textMarketPrice"
+            style="@style/style_15_666666_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textClothesName"
+            android:layout_marginTop="5.0dip" />
+
+        <TextView
+            android:id="@id/textProductComment"
+            style="@style/style_16_666666_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textMarketPrice"
+            android:layout_marginTop="5.0dip"
+            android:text="限时特价：" />
+
+        <TextView
+            android:id="@id/textClothesPrice"
+            style="@style/style_18_C21513_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textMarketPrice"
+            android:layout_marginTop="5.0dip"
+            android:layout_toRightOf="@id/textProductComment" />
+
+        <TextView
+            android:id="@id/relProductComment"
+            style="@style/style_14_C21513_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textProductComment"
+            android:layout_marginTop="9.0dip"
+            android:text="剩余时间：" />
+
+        <TextView
+            android:id="@id/textProductCommentNum"
+            style="@style/style_13_C21513_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textProductComment"
+            android:layout_marginTop="9.0dip"
+            android:layout_toRightOf="@id/relProductComment" />
+
+        <TextView
+            android:id="@id/imgTime"
+            style="@style/style_15_EBEBEB_BOLD"
+            android:layout_width="85.0dip"
+            android:layout_height="30.0dip"
+            android:layout_below="@id/textClothesPrice"
+            android:layout_marginLeft="3.0dip"
+            android:layout_toRightOf="@id/textProductCommentNum"
+            android:background="@drawable/product_detail_shop_normal"
+            android:gravity="center"
+            android:text="抢购" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

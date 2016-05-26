@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+    <ScrollView
+        android:id="@+id/shopcar_body_srcoll"
+         style="@style/mSrollView" xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:id="@+id/shopcar_body_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/style_14_4B4B4B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5.0dip"
+                    android:text="数量总计：" />
+
+                <TextView
+                    android:id="@+id/shopcar_total_buycount_text_1"
+                    style="@style/style_14_A10D0B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="5.0dip"
+                    android:text="55" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/style_14_4B4B4B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5.0dip"
+                    android:text="赠送积分总计：" />
+
+                <TextView
+                    android:id="@+id/shopcar_total_bonus_text_1"
+                    style="@style/style_14_A10D0B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="5.0dip"
+                    android:text="5500" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/style_14_4B4B4B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5.0dip"
+                    android:text="金额总计(不含运费)：" />
+
+                <TextView
+                    android:id="@+id/shopcar_total_money_text_1"
+                    style="@style/style_18_A10D0B_BOLD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="5.0dip"
+                    android:text="￥：6500" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/style_18_000000_BOLD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2.0dip"
+                    android:paddingTop="5.0sp"
+                    android:text="商品明细" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/shopcar_product_list"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10.0dip"
+                android:background="@anim/shape_rounded_rectangle"
+                android:cacheColorHint="#00000000"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="true"
+                android:listSelector="@anim/shape_rounded_selectable" />
+
+          
+
+            <TextView
+                android:id="@+id/shopcar_bottom_toPay_text"
+                style="@style/style_17_FFFFFF_BOLD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@anim/button_long"
+                android:gravity="center"
+                android:text="去 结 算" />
+        </LinearLayout>
+    </ScrollView>
+ 

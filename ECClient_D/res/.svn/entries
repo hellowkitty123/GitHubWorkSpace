@@ -1,0 +1,55 @@
+10
+
+dir
+684
+svn://192.168.1.139/itcast/ECClient_D/res
+svn://192.168.1.139/itcast
+
+
+
+2012-04-23T02:44:45.844257Z
+679
+admin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4969749f-5c9e-2741-b5cc-98a2669b041a
+
+values
+dir
+
+drawable
+dir
+
+drawable-hdpi
+dir
+
+anim
+dir
+
+menu
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+drawable-xhdpi
+dir
+
+layout
+dir
+

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itheima.redbaby"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+	<uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+     
+
+     <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.itheima.redbaby" />
+    
+    <application
+        android:name=".application.ECApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Default" >
+        <uses-library android:name="android.test.runner"/>
+
+        <!-- 欢迎界面 -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 主页 -->
+        <activity
+            android:name="HomeActivity"
+            android:launchMode="singleTask" />
+           <!-- 分类 -->
+        <activity
+            android:name="CategoryActivity"
+            android:launchMode="singleTask" />
+
+        <!-- 搜索 -->
+        <activity
+            android:name="SearchActivity"
+            android:launchMode="singleTask" />
+
+        <!-- 购物车 -->
+        <activity
+            android:name="ShoppingCarActivity"
+            android:launchMode="singleTask" />
+        <!-- 更多 -->
+        <activity
+            android:name="MoreActivity"
+            android:launchMode="singleTask" />
+        
+
+        <!-- 分类 -->
+        <activity android:name="CategoryActivity" />
+        <activity android:name="CategoryTwoLevelActivity" />
+        <activity android:name="CategoryThreeLevelActivity" />
+        
+     	<activity android:name="ProductListActivity"/>
+     	<activity android:name="ProductFilterActivity"/>
+     	
+     	<!-- 商品详细 -->
+     	<activity  android:name="ProductDetailActivity"/>
+
+        <!-- 地址管理 -->
+        <activity android:name="AddressManageActivity" />
+
+        <!-- 地址添加 -->
+        <activity android:name="AddAddressActivity" />
+
+        <!-- 选择地址 -->
+        <activity android:name="SelectAddressActivity" />
+        
+        <!-- 浏览记录 -->
+        <activity android:name="ProductHistoryActivity" />
+        
+        <!-- 登录 -->
+        <activity android:name="LoginActivity" />
+        
+        <!-- 注册 -->
+        <activity android:name="RegisterActivity" />
+
+        <!-- 促销快报 -->
+        <activity android:name="BulletinActivity" />
+
+        <!-- 促销列表 -->
+        <activity android:name="TopicProductListActivity" />
+         
+        
+        <!-- 关于 -->
+        <activity android:name="AboutActivity" />
+        <!-- 帮助 -->
+        <activity android:name="HelpActivity" />   
+          <!-- 帮助详情 -->
+        <activity android:name="HelpDetailActivity" />
+        
+        <!-- 搜索列表-->
+        <activity android:name="SearchProductListActivity" />
+        
+        <!-- 服务 -->
+        <service  android:name=".service.ECServiceManager"></service>
+        <!-- 限时抢购 -->
+         <activity android:name="LimitbuyActivity" />
+         <activity android:name="NewproductActivity" />
+         <activity android:name="HotproductActivity" />
+         <activity android:name="BrandActivity" />
+         <activity android:name="PlistproductActivity" />
+        <!-- 账户中心  ADD BY  LQT -->
+        <activity android:name="AccountActivity"></activity>
+        <activity android:name=".OrderListActivity"></activity>
+        <activity android:name=".AddressManagerActivity"></activity>
+        <activity android:name=".MyFavoriteActivity"></activity>
+        <activity android:name=".OrderDetailActivity"></activity>
+         <activity android:name=".Payment_Center_Activity"></activity>
+         <activity android:name=".OrdrSubmitOkActivity"></activity>
+    </application>
+
+</manifest>

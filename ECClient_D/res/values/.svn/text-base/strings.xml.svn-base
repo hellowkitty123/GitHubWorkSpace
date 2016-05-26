@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">红孩子欢迎您!</string>
+    <string name="login_name">用户名：</string>
+    <string name="login_pwd">密码：</string>
+    <string name="app_name">红孩子</string>
+    <string name="net_error">当前网络不可用，请先连接Internet！</string>
+	<string name="my_account_title">我的账户</string>
+	<string name="my_ordr_title">我的订单</string>
+	<string name="address_manage_title">地址管理</string>
+	<string name="my_favorite_title">收藏夹</string>
+	<string name="recent_browse_title">最近浏览</string>
+	<string name="menu_home">主页</string>
+	<string name="menu_search">搜索</string>
+	<string name="menu_favorites">收藏夹</string>
+	<string name="menu_myorder">我的订单</string>
+	<string name="menu_history">浏览历史</string>
+	<string name="menu_exit">退出</string>
+	<string name="about_title">关 于</string>
+	<string name="about_comp">天津红孩子商贸有限公司</string>
+	<string name="more">更多</string>
+	<string name="category_title">分类</string>
+	<string name="no_information">加载中...</string>
+	<string name="loadTitle"><strong>正在更新数据</strong></string>
+	<string name="LoadContent"><strong>请稍候……</strong></string>
+	<string name="sales">销量</string>
+	
+	<string name="price">价格</string>
+	<string name="goodDegree">好评度</string>
+	<string name="groundingTime">上架时间</string>
+	<string name="goback">返回</string>
+	<string name="prod_detail">商品详情</string>
+	<string name="shopcar">加入购物车</string>
+	<string name="collect">收藏</string>
+	<string name="prom_bulletin">促销快报</string>
+	<string name="help_title">帮助中心</string>
+	<string name="ordr_tel">01088499999</string>
+	<string name="get_userinfo">userinfo.jsp</string>
+	<string name="get_favorite_list">android_favorite.jsp</string>
+	<string name="get_logistics">logistics.jsp</string>
+	<string name="get_order_list">ordrlist.jsp</string>
+	<string name="get_address_list">android_address.jsp</string>
+	<string name="save_address">addresssave.jsp</string>
+	<string name="login">login</string>
+	<string name="app_host">http://192.168.1.139:8090/redbaby/</string>
+
+	<string name="topic_plist">topic/plist</string>
+	<string name="home">home</string>
+
+	<string name="register">register</string> 
+	<string name="cart">cart</string>
+
+	<string name="category">category</string>
+	<string name="prodList">productlist</string>
+	<string name="product">product</string>
+	<string name="description">/product/description</string>
+	<string name="topic">topic</string>
+ 	<string name="search">search</string>
+ 	<string name="searchRecommend">search/recommend</string>
+	
+	<string name="downning">正在下载</string>
+	<string name="down_error">下载失败</string>
+	<string name="address_manager_add">新增地址</string>
+	<string name="custom_title_back">返回</string>
+	<string name="please_input_product_name">请输入您要搜索的商品</string>
+	<string name="address_select_area">选择地区</string>
+	<string name="address_select_city">选择城市</string>
+	<string name="address_select_province">选择省份</string>
+	<string name="delete_success">删除成功</string>
+	<string name="yes">是</string>
+	<string name="no">否</string>
+	<string name="toast">提示</string>
+	<string name="add_succuess">添加成功!</string>
+	<string name="edit_success">修改成功</string>
+	<string name="address_manage">地址管理</string>
+	<string name="select_address">选择地址</string>
+	<string name="check_out">结算中心</string>
+	<string name="set_success">设置成功</string>
+	<string name="category_view">分类浏览</string>
+	<string name="clear">清空</string>
+	<string name="userinfo">userinfo</string>
+    <string name="orderlist">orderlist</string>
+    <string name="orderdetail">orderdetail</string>
+    <string name="favorites">favorites</string>
+    <string name="help">help</string>
+    <string name="checkout">checkout</string>   
+    <string name="uphandcheckout">提交订单</string>  
+    <string name="uphandsuccess">提交成功</string>  
+    <string name="ordersumbit">ordersumbit</string> 
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mSrollView" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@id/relSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="39.0dip"
+            android:layout_below="@id/relTop"
+            android:background="@drawable/home_search3" >
+
+            <EditText
+                android:id="@+id/editSearchInfo"
+                style="@style/style_14_4B4B4B"
+                android:layout_width="220dip"
+                android:layout_height="39.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32.0dip"
+                android:background="@android:color/transparent"
+                android:hint="@string/please_input_product_name"
+                android:maxLength="26"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:id="@+id/home_searchok"
+                android:layout_width="43.0dip"
+                android:layout_height="60.0dip"
+                android:layout_alignBottom="@id/relSearch"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/relSearch"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/search_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="117.0dip" >
+ 
+               <com.itheima.redbaby.widget.MyGallery
+                android:id="@+id/gallery"
+                style="@style/MGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_slide_ll"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dip" >
+
+                <ImageView
+                    android:id="@+id/imgPoint0"
+                    style="@style/slide"
+                    android:background="@drawable/slide_adv_selected" />
+
+                <ImageView
+                    android:id="@+id/imgPoint1"
+                    style="@style/slide"
+                    android:background="@drawable/slide_adv_normal" />
+
+                <ImageView
+                    android:id="@+id/imgPoint2"
+                    style="@style/slide"
+                    android:background="@drawable/slide_adv_normal" />
+
+                <ImageView
+                    android:id="@+id/imgPoint3"
+                    style="@style/slide"
+                    android:background="@drawable/slide_adv_normal" />
+
+                <ImageView
+                    android:id="@+id/imgPoint4"
+                    style="@style/slide"
+                     android:background="@drawable/slide_adv_normal" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/home_item" />
+
+        <ListView
+            android:id="@+id/custonInfoListView"
+            android:layout_width="fill_parent"
+            android:layout_height="229dip"
+            android:background="@color/home_item_normal"
+            android:divider="@color/home_item"
+            android:dividerHeight="1px"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</ScrollView>

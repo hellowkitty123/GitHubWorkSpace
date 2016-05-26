@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/login_name_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5.0dip"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="用户名："
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+
+        <EditText
+            android:id="@id/login_name_edit"
+            android:layout_width="220.0dip"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号码或eMail地址"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/login_pwd_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/login_pwd"
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+
+        <EditText
+            android:id="@id/login_pwd_edit"
+            android:layout_width="220.0dip"
+            android:layout_height="wrap_content"
+            android:hint="请输入6-16位字母或数字"
+            android:maxLength="16"
+            android:password="true"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="确认密码："
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+
+        <EditText
+            android:id="@+id/login_pwd2_edit"
+            android:layout_width="220.0dip"
+            android:layout_height="wrap_content"
+            android:hint="请再次输入密码"
+            android:maxLength="16"
+            android:password="true"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/register_text"
+        style="@style/style_18_BEBEBE_BOLD"
+        android:layout_width="120.0dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_pwd_layout"
+        android:layout_gravity="center"
+        android:layout_marginTop="15.0dip"
+        android:background="@anim/button_long"
+        android:gravity="center"
+        android:text="提  交" />
+
+</LinearLayout>
