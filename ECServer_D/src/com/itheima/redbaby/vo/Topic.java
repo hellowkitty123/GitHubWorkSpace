@@ -34,6 +34,7 @@ public class Topic {
 		this.name = name;
 	}
 	public String getPic() {
+		System.out.println("|");
 		return pic;
 	}
 	public void setPic(String pic) {
